@@ -1,15 +1,16 @@
 source 'https://rubygems.org/'
 
 gem 'rails'
-gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'pg'
+gem 'puma'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'jquery-rails'
+
 group :development do
-  gem 'listen', '~> 3.0.5'
+  gem 'listen'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
 
 group :development, :test do
@@ -20,10 +21,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'valid_attribute'
-end
-
-group :production do
-  gem 'rails_12factor'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
