@@ -6,6 +6,7 @@ gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
+gem 'devise'
 
 group :development do
   gem 'listen'

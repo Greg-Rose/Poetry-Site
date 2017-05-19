@@ -17,4 +17,23 @@
 
 body {
   background-color: black;
+  color: white;
+}
+
+.admin {
+  color: black;
+}
+
+.panel {
+  margin-top: 40px;
+}
+
+.navbar{
+  background-color: black;
+  border-color: black;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: lightgrey;
 }
