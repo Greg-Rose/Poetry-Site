@@ -10,9 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require trix
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
 //= require rails-ujs
+//= require jquery-ui/widgets/sortable
+//= require rails_sortable
+//= require trix
 //= require_tree .
+
+$(".sortable").railsSortable();

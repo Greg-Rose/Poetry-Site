@@ -8,6 +8,8 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'devise'
 gem 'trix'
+gem 'jquery-ui-rails'
+gem 'rails_sortable'
 
 group :development do
   gem 'listen'

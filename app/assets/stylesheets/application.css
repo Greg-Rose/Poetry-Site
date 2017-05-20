@@ -112,6 +112,10 @@ trix-editor {
   text-decoration: none;
 }
 
+.title-link {
+  color: inherit;
+}
+
 .title-link:hover {
   color: darkgrey;
   text-decoration: none;
