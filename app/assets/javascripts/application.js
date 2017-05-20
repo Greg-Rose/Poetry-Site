@@ -13,10 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
-//= require rails-ujs
 //= require jquery-ui/widgets/sortable
 //= require rails_sortable
 //= require trix
 //= require_tree .
 
-$(".sortable").railsSortable();
+$(document).ready(function(){
+  $(".sortable").railsSortable();
+});
