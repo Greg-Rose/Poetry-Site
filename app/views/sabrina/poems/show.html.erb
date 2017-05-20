@@ -2,7 +2,7 @@
   <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
     <div class="text-center">
       <%= link_to "Edit", edit_sabrina_poem_path(@poem.id), class: "btn btn-primary" %>
-      <%= link_to "Delete", sabrina_poem_path(@poem), method: :destroy, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+      <%= link_to "Delete", sabrina_poem_path(@poem), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
     </div>
     <div class="panel panel-default edit">
       <div class="panel-body poem">

@@ -97,6 +97,7 @@ trix-editor {
 }
 
 .block h5 {
+  margin-top: 0;
   text-align: center;
 }
 
@@ -112,6 +113,11 @@ trix-editor {
   text-decoration: none;
 }
 
+.title-link {
+  color: inherit;
+  margin-left: 14px;
+}
+
 .title-link:hover {
   color: darkgrey;
   text-decoration: none;
@@ -125,5 +131,28 @@ trix-editor {
 }
 
 .add-poem-btn {
+  background-color: #e5ccff;
+  border-color: #e5ccff;
+  color: black;
   text-align: center;
+  font-weight: bold;
+}
+
+.add-poem-btn:hover {
+  background-color: #d7b3ff;
+  border-color: #d7b3ff;
+}
+
+.admit-poem-list {
+  background-color: lightgrey;
+  color: black;
+  padding: 30px;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid black;
+}
+
+.table-bordered>tbody>tr>td:active {
+    border: none;
 }

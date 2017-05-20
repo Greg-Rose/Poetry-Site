@@ -2,7 +2,7 @@ class Sabrina::PoemsController < ApplicationController
   before_action :authorize_admin
 
   def index
-    @poems = Poem.order(created_at: :desc)
+    @poems = Poem.order(:sort)
   end
 
   def show

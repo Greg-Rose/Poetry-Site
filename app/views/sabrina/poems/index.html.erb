@@ -1,22 +1,21 @@
-<div class="text-center">
-  <%= link_to "Add Poem", new_sabrina_poem_path, class: "btn btn-primary add-poem-btn" %>
-</div>
 <div class="row">
-  <% @poems.each do |poem| %>
-    <div class="col-sm-6 col-md-3 col-lg-3">
-      <div class="block">
-        <div class="thumbnail unselectable center-block">
-          <%= link_to sabrina_poem_path(poem) do %>
-            <div class="thumbnail-body">
-              <%= poem.body.html_safe %>
-            </div>
-          <% end %>
-
-        </div>
-        <%= link_to sabrina_poem_path(poem), class: "title-link" do %>
-          <h5 class="unselectable"><%= poem.title %></h5>
-        <% end %>
+  <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+    <div class="text-center">
+      <%= link_to "Add Poem", new_sabrina_poem_path, class: "btn btn-default add-poem-btn" %>
+    </div>
+    <div class="panel panel-default edit">
+      <div class="panel-body admit-poem-list">
+        <br>
+        <table class="table table-bordered table-hover">
+          <tbody class="sortable">  <!-- sortable target -->
+            <% sortable_fetch(@poems) do |poem, id_tag| %>  <!-- RailsSortable helper -->
+              <tr id="<%= id_tag %>">  <!-- you must write it -->
+                <td><h4><%= link_to poem.title, sabrina_poem_path(poem), class: "title-link" %></h4></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
       </div>
     </div>
-  <% end %>
+  </div>
 </div>
