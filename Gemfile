@@ -7,6 +7,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'devise'
+gem 'trix'
 
 group :development do
   gem 'listen'

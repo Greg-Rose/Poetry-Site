@@ -5,7 +5,12 @@ Rails.application.routes.draw do
     post 'sabrina', to: 'devise/sessions#create', as: :admin_session
     delete 'signout', to: 'devise/sessions#destroy', as: :destroy_admin_session
   end
-  resources :poems, only: [:index]
+
+  resources :poems, only: [:index, :show]
+
+  namespace :sabrina do
+    resources :poems, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  end
 
   root 'poems#index'
 end
