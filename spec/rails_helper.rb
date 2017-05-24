@@ -57,8 +57,10 @@ RSpec.configure do |config|
 end
 require "capybara/rails"
 require "valid_attribute"
+require "support/javascript"
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
+  config.include Devise::Test::IntegrationHelpers, type: :feature
+  config.include(JavascriptHelper, type: :feature)
 end
-
