@@ -6,10 +6,15 @@
       </div>
       <div class="panel-body">
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-          <%= devise_error_messages! %>
+          <% if !devise_error_messages!.empty? %>
+            <div class="alert alert-danger devise-error-alert alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <%= devise_error_messages! %>
+            </div>
+          <% end %>
 
           <div class="form-group">
-            <%= f.label :email %><br />
+            <%= f.label :email %>
             <%= f.email_field :email, autofocus: true, class: "form-control" %>
           </div>
 
@@ -18,21 +23,17 @@
           <% end %>
 
           <div class="form-group">
-            <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+            <%= f.label :password %>
             <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
-            <% if @minimum_password_length %>
-              <br />
-              <em><%= @minimum_password_length %> characters minimum</em>
-            <% end %>
           </div>
 
           <div class="form-group">
-            <%= f.label :password_confirmation %><br />
+            <%= f.label :password_confirmation %>
             <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
           </div>
 
           <div class="form-group">
-            <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+            <%= f.label :current_password %>
             <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
           </div>
 

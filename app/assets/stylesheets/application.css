@@ -130,19 +130,6 @@ trix-editor {
   padding: 30px;
 }
 
-.add-poem-btn {
-  background-color: #e5ccff;
-  border-color: #e5ccff;
-  color: black;
-  text-align: center;
-  font-weight: bold;
-}
-
-.add-poem-btn:hover {
-  background-color: #d7b3ff;
-  border-color: #d7b3ff;
-}
-
 .admit-poem-list {
   background-color: lightgrey;
   color: black;
@@ -156,3 +143,35 @@ trix-editor {
 .table-bordered>tbody>tr>td:active {
     border: none;
 }
+
+#error_explanation h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+#error_explanation ul {
+  margin-bottom: 0;
+}
+
+.devise-error-alert {
+  margin-bottom: 15px;
+}
+
+.btn-default {
+  background-color: #F5F5F5;
+  border-color: darkgrey;
+  font-weight: bold;
+}
+
+/*.add-poem-btn {
+  background-color: #e5ccff;
+  border-color: #e5ccff;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.add-poem-btn:hover {
+  background-color: #d7b3ff;
+  border-color: #d7b3ff;
+}*/
