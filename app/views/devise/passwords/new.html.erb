@@ -6,10 +6,15 @@
       </div>
       <div class="panel-body">
         <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-          <%= devise_error_messages! %>
+          <% if !devise_error_messages!.empty? %>
+            <div class="alert alert-danger devise-error-alert alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <%= devise_error_messages! %>
+            </div>
+          <% end %>
 
           <div class="form-group">
-            <%= f.label :email %><br />
+            <%= f.label :email %>
             <%= f.email_field :email, autofocus: true, class: "form-control" %>
           </div>
 
