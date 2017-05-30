@@ -1,0 +1,15 @@
+<div class="col-sm-6 col-md-3 col-lg-3">
+  <div class="block">
+    <div class="thumbnail unselectable center-block">
+      <%= link_to poem_path(poem) do %>
+        <div class="thumbnail-body">
+          <%= poem.body.html_safe %>
+        </div>
+      <% end %>
+
+    </div>
+    <%= link_to poem_path(poem), class: "title-link" do %>
+      <h5 class="unselectable"><%= poem.title %></h5>
+    <% end %>
+  </div>
+</div>

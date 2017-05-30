@@ -11,6 +11,7 @@ gem 'trix'
 gem 'jquery-ui-rails'
 gem 'rails_sortable'
 gem 'sendgrid-ruby'
+gem 'will_paginate'
 
 group :development do
   gem 'listen'

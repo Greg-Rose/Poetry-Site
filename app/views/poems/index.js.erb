@@ -1,0 +1,6 @@
+$('#poems').append('<%= j render @poems %>');
+<% if @poems.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @poems %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>
