@@ -21,3 +21,16 @@
 $(document).ready(function(){
   $(".sortable").railsSortable();
 });
+
+$(document).ready(function(){
+  if ($('.pagination').length) {
+    $(window).scroll(function() {
+      var url = $('.pagination .next_page').attr('href');
+      if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 10) {
+        $('.pagination').text("Loading...");
+        $.getScript(url);
+      }
+    });
+    $(window).scroll();
+  }
+});
