@@ -1,5 +1,10 @@
 <div class="row">
-  <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+  <div class="col-xs-1 col-md-1 col-md-offset-2">
+    <%= link_to poems_path, class: "back-arrow" do %>
+      <span class="glyphicon glyphicon-arrow-left"></span>
+    <% end %>
+  </div>
+  <div class="col-xs-10 col-md-6">
     <div class="panel panel-default">
       <div class="panel-body poem">
         <h2><%= @poem.title %></h2>
@@ -7,8 +12,6 @@
         <p>
           <%= @poem.body.html_safe %>
         </p>
-        <br>
-        <%= link_to "Back", root_path %>
       </div>
     </div>
   </div>
