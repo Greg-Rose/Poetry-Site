@@ -20,6 +20,6 @@ feature 'user views poem' do
 
     expect(page).to have_content poems[1].title
     expect(page).to have_content poems[1].body
-    expect(page).to have_link "Back"
+    expect(page).to have_link(nil, href: "#{poems_path}")
   end
 end
