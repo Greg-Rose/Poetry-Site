@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-xs-1 col-md-1 col-md-offset-2">
     <%= link_to poems_path, class: "back-arrow" do %>
-      <span class="glyphicon glyphicon-arrow-left"></span>
+      <span class="glyphicon glyphicon-arrow-left<%= " admin-back-arrow" if admin_signed_in? %>"></span>
     <% end %>
   </div>
   <div class="col-xs-10 col-md-6">

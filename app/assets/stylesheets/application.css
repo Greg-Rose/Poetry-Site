@@ -196,6 +196,10 @@ span.glyphicon-arrow-left:hover {
   color: lightgrey;
 }
 
+span.glyphicon-arrow-left.admin-back-arrow {
+  margin-top: 88px;
+}
+
 /* Make pagination blend in */
 .pagination {
   color: #1B1B1B;
