@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :admins, controllers: { registrations: "registrations" }, skip: [:sessions]
+  scope '/sabrina' do
+    devise_for :admins, controllers: { registrations: "registrations" }, skip: [:sessions]
+  end
+
   as :admin do
     get 'sabrina', to: 'devise/sessions#new', as: :new_admin_session
     post 'sabrina', to: 'devise/sessions#create', as: :admin_session
