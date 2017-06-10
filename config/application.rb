@@ -27,5 +27,6 @@ module PoetrySite
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.assets.precompile += %w( *.eot *.svg *.ttf *.woff *.otf)
   end
 end
