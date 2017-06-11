@@ -3,6 +3,7 @@
     <div class="thumbnail unselectable center-block">
       <%= link_to poem_path(poem) do %>
         <div class="thumbnail-body">
+          <h2><%= poem.title %></h2>
           <%= poem.body.html_safe %>
         </div>
       <% end %>

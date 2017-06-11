@@ -84,7 +84,7 @@ trix-editor {
   width: 140px;
   margin-top: 40px;
   margin-bottom: 0;
-  font-size: 8px;
+  font-size: 4px;
 }
 
 .thumbnail:hover {
@@ -94,6 +94,13 @@ trix-editor {
 .thumbnail-body {
   height: 189px;
   overflow: hidden;
+}
+
+.thumbnail-body h2{
+  font-size: 4px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 .block h5 {
@@ -128,6 +135,11 @@ trix-editor {
   color: black;
   min-height: 700px;
   padding: 30px;
+}
+
+.poem h2 {
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 .admit-poem-list {
