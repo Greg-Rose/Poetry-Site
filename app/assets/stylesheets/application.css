@@ -93,6 +93,8 @@ trix-editor {
 
 .thumbnail-body {
   height: 189px;
+  margin-left: 2px;
+  margin-right: 2px;
   overflow: hidden;
 }
 
