@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170520163723) do
   end
 
   create_table "poems", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.string "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
